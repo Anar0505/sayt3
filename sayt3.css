@@ -1,0 +1,328 @@
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  align-items: center;
+}
+.navbar__start {
+  font-size: 20px;
+  padding: 24px;
+  font-weight: bold;
+}
+.navbar__navigator {
+  display: flex;
+  justify-content: end;
+}
+.navbar__navigator__options {
+  font-size: 16px;
+  padding: 24px;
+}
+.navbar__menubutton {
+  display: none;
+}
+.navbar__menubutton > button {
+  padding: 12px;
+  border: 1px solid #64a19d;
+  color: #64a19d;
+  background-color: white;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 990px) {
+  .navbar__navigator {
+    display: none;
+  }
+  .navbar__menubutton {
+    display: flex;
+  }
+}
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%
+    ),
+    url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__center {
+  width: 745px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__center__gray {
+  text-transform: uppercase;
+  font-size: 104px;
+  font-family: "Varela Round", serif;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  letter-spacing: 16px;
+}
+.hero__center__free {
+  color: white;
+  opacity: 0.5;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  margin: 8px 132px 48px;
+  text-align: center;
+  font-weight: 200;
+}
+.hero__center__button {
+  display: flex;
+  justify-content: center;
+}
+.hero__center__button > button {
+  width: 178px;
+  height: 60px;
+  padding: 20px 32px;
+  border-radius: 5px;
+  background-color: #64a19d;
+  border: none;
+  font: 12.8px;
+  font-family: "Varela Round", serif;
+  color: white;
+}
+
+@media only screen and (max-width: 990px) {
+  .hero__center__gray {
+    font-size: 64px;
+  }
+  .hero__center__free {
+    font-size: 16px;
+    margin: 8px 91px 48px;
+    max-width: 320px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .hero__center__gray {
+    font-size: 40px;
+  }
+  .hero__center__free {
+    font-size: 16px;
+    margin: 8px 18px 48px;
+    max-width: 320px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .hero__center__gray {
+    font-size: 32px;
+    letter-spacing: 12px;
+  }
+  .hero__center__free {
+    font-size: 13px;
+    margin: 8px 12px 48px;
+    max-width: 320px;
+  }
+}
+.built {
+  padding-top: 10rem;
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.built__textcenter {
+  max-width: 800px;
+  margin: auto;
+}
+.built__textcenter__builtwith {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+.built__textcenter__second {
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 72px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-block-end: 80px;
+  margin-block-start: 0px;
+  margin-bottom: 80px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 0px;
+  text-align: center;
+  text-size-adjust: 100%;
+  unicode-bidi: isolate;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#sekil {
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 1400px) {
+  .built__textcenter {
+    max-width: 680px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .built__textcenter {
+    max-width: 560px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .built__textcenter {
+    max-width: 670px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .built__textcenter {
+    max-width: 460px;
+  }
+}
+.pictures {
+  padding: 160px 0;
+}
+.pictures__container {
+  max-width: 1224px;
+  margin: 0 auto 48px;
+}
+.pictures__shoreline {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.pictures__shoreline__pic {
+  max-width: 816px;
+  height: auto;
+}
+.pictures__shoreline__pic > img {
+  max-width: 100%;
+}
+.pictures__shoreline__write {
+  width: calc(100% - 816px);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 0 48px;
+}
+.pictures__shoreline__write__shore {
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-weight: 300;
+}
+.pictures__shoreline__write__grayscale {
+    margin: 0 auto;
+    font-size: 16px;
+  max-width: 85%;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-weight: 100;
+}
+@media only screen and (max-width: 1400px) {
+    .pictures__shoreline__pic {
+        max-width: 696px;
+        height: auto;
+      }
+      .pictures__shoreline__write {
+        max-width:  348px;
+      }
+      .pictures__shoreline {
+        display: flex;
+        
+        justify-content: center;
+      }
+  }
+  @media only screen and (max-width: 1200px) {
+    .pictures__shoreline__pic {
+        max-width: 504px;
+        height: auto;
+      }
+      .pictures__shoreline__write {
+        width: 360px;
+      }
+  }
+  @media only screen and (max-width: 1200px) {
+    .pictures__shoreline__pic {
+        max-width: 504px;
+        height: auto;
+      }
+      .pictures__shoreline__write {
+        width: 360px;
+      }
+  }
+  @media only screen and (max-width: 990px) {
+    .pictures__shoreline {
+        display: flex;
+        
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .pictures__shoreline__pic {
+        max-width: 672px;
+        height: auto;
+      }
+      .pictures__shoreline__write {
+        max-width: 100%;
+        padding: 32px;
+      }
+
+  }
+.pictures__containerv2{
+    width: 1224px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pictures__picturedescription__pic>img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.pictures__picturedescription__des{
+    background-color: black;
+    height: 100%;
+    padding: 80px;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pictures__picturedescription__des__head{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 200;
+    font-family: "Nunito", sans-serif;
+}
+.pictures__picturedescription__des__body{
+color: white;
+opacity: 0.5;
+text-align: center;
+font-family: "Nunito", sans-serif;
+font-size: 14.4px;
+}
