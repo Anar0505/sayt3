@@ -97,8 +97,12 @@
   font: 12.8px;
   font-family: "Varela Round", serif;
   color: white;
+  transition: 0.5s;
 }
-
+.hero__center__button > button:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
 @media only screen and (max-width: 990px) {
   .hero__center__gray {
     font-size: 64px;
@@ -325,4 +329,157 @@ opacity: 0.5;
 text-align: center;
 font-family: "Nunito", sans-serif;
 font-size: 14.4px;
+}
+@media only screen and (max-width: 1400px) {
+  .pictures__containerv2{
+    width: 1024px;}
+}
+@media only screen and (max-width: 1200px) {
+  .pictures__containerv2{
+    width: 864px;}
+}
+@media only screen and (max-width: 990px) {
+  .pictures__containerv2{
+    width: 672px;
+  grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .pictures__containerv2{
+    width: 492px;}
+}
+@media only screen and (max-width: 600px) {
+  .pictures__containerv2{
+    max-width: 90%;}
+}
+.subscribe{
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%
+    ),
+    url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 160px 0;
+  display: flex;
+  justify-content: center;
+}
+.subscribe__container{
+  max-width: 800px;
+}
+.subscribe__header{
+  text-align: center;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  margin: 0 0 48px;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.subscribe__buttons{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.subscribe__buttons > button,.subscribe__buttons > input{
+  padding: 20px 32px;
+  border-radius: 5px;
+  border: none;
+}
+#enteremail{
+  width: 612px;
+}
+#notify{
+  background-color: #64a19d;
+  opacity: 0.5;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+@media only screen and (max-width: 1400px) {
+  #enteremail{
+    max-width: 490px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #enteremail{
+    max-width: 370px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .subscribe__header{
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  #enteremail{
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .subscribe__container{
+    max-width: 90%;
+  }
+  #enteremail{
+    padding: 20px 0;
+  }
+}
+.footersection{
+  background-color: #000;
+  padding-top: 80px;
+}
+.footer__cards{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__cards__card{
+  width: 31%;
+  padding: 24px 0;
+  border-radius: 8px;
+  border-bottom: 5px solid #64a19d;
+  text-align: center;
+  color: #64a19d;
+  font-family: "Nunito", sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__cards__card>hr{
+  width: 48px;
+  height: 4px;
+  margin: 24px auto;
+  background-color: #64a19d;
+}
+.footer__social{
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 80px;
+}
+.footer__social__icons{
+  margin: 0 8px;
+width: 48px;
+height: 48px;
+border-radius: 100%;
+text-align: center;
+background-color: gray;
+opacity: 0.5;
+color: rgb(65, 65, 65);
+display: flex;
+align-items: center;
+justify-content:center ;
+}
+footer{
+  padding: 80px 0 ;
+background-color: #000;
+}
+#copy{
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  opacity: 0.5;
 }
